@@ -15,7 +15,7 @@ const App = () => {
       const formData = new FormData();
       formData.append("file", file);
 
-      const response = await axios.post("http://127.0.0.1:8000/upload/", formData, {
+      const response = await axios.post("#api_link/upload/", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
@@ -29,7 +29,7 @@ const App = () => {
 
   const handleGetData = async () => {
     try {
-      const response = await axios.get("http://127.0.0.1:8000/get_data/");
+      const response = await axios.get("#api_link/get_data/");
       setData(response.data);
       console.log(data)
     } catch (error) {
