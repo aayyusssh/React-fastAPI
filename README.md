@@ -14,7 +14,6 @@ Node.js and Python
 ### replace the #api_link with your fast api link in App.js file
 
 ## Installation
-### GoTo path ./fastapi-data and run the following commands
 ```bash
 // GoTo path ./fastapi-data and run the following commands
 pip install -r requirements.txt
