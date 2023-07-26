@@ -14,7 +14,7 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-engine = create_engine("mysql://<USERNAME>:<PASSWORD>.<HOST>:3306/<DATABASE NAME>")
+engine = create_engine("mysql://#name:#password.#host:3306/#databasename")
 @app.post("/upload/")
 async def upload_csv(file: UploadFile = File(...)):
     try:
